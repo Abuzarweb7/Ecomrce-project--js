@@ -224,7 +224,7 @@ const products = [
 ];
 
 const div = document.querySelector(".parrent")
-const catagury = ['All item']
+const catagury = ['all item']
 products.map((val) =>{
     return  div .innerHTML += ` <div class="card">
  <h1 class="name"> 
@@ -247,3 +247,4 @@ products.map((val) =>{
 })
 // console.log(newarr);
 
+const removeDuplicateCatagory = ['all item' , ... new Set(products.map((item)=> item.category))]
