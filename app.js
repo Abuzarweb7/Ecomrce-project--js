@@ -1,6 +1,6 @@
-// console.log("hello world");
+
 const products = [
-  // Electronics
+ 
   {
     name: "Wireless Mouse",
     price: 25.99,
@@ -32,7 +32,6 @@ const products = [
     brand: "Apple",
   },
 
-  // Footwear
   {
     name: "Running Shoes",
     price: 59.99,
@@ -64,7 +63,7 @@ const products = [
     brand: "Timberland",
   },
 
-  // Home Appliances
+
   {
     name: "Blender",
     price: 34.99,
@@ -96,7 +95,7 @@ const products = [
     brand: "Breville",
   },
 
-  // Stationery
+ 
   {
     name: "Notebook",
     price: 3.99,
@@ -128,7 +127,6 @@ const products = [
     brand: "Erin Condren",
   },
 
-  // Furniture
   {
     name: "Desk Chair",
     price: 89.99,
@@ -160,7 +158,7 @@ const products = [
     brand: "Pottery Barn",
   },
 
-  // Fitness
+
   {
     name: "Yoga Mat",
     price: 19.99,
@@ -224,3 +222,28 @@ const products = [
     brand: "Bosch",
   },
 ];
+
+const div = document.querySelector(".parrent")
+const catagury = ['All item']
+products.map((val) =>{
+    return  div .innerHTML += ` <div class="card">
+ <h1 class="name"> 
+    ${val.name}
+  </h1>
+
+  <h2 class="price">$${val.price}</h2>
+ <p class="category">${val.category}</p>
+  <p>${val.category}
+</p></div>`
+})
+
+
+
+ products.map((val)=>{
+    if(!catagury.includes(val.category)){
+        catagury.push(val.category)
+    }
+     return val.category
+})
+// console.log(newarr);
+
