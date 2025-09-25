@@ -223,7 +223,11 @@ const products = [
   },
 ];
 
+
+
+
 const div = document.querySelector(".parrent")
+const btnDiv = document.querySelector(".btn")
 const catagury = ['all item']
 products.map((val) =>{
     return  div .innerHTML += ` <div class="card">
@@ -251,3 +255,8 @@ products.map((val) =>{
 // console.log(newarr);
 
 const removeDuplicateCatagory = ['all item' , ... new Set(products.map((item)=> item.category))]
+removeDuplicateCatagory.forEach(item=>{
+  const btn = document.createElement("button")
+  btn.innerText = item
+ btnDiv.prepend(btn);
+})

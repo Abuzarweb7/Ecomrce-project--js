@@ -9,6 +9,14 @@ body {
   background-color: #fff;
   font-family: sans-serif;
 }
+.btn{
+ color: #000000;
+/* text-align: center; */
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 40px;
+}
 
 /* Container for cards */
 .parrent {
@@ -107,7 +115,7 @@ body {
   }
 
 
-  button {
+    button {
     position: relative;
     padding: 10px 20px;
     border-radius: 7px;
