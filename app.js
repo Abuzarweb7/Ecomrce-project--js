@@ -234,7 +234,10 @@ products.map((val) =>{
   <h2 class="price">$${val.price}</h2>
  <p class="category">${val.category}</p>
   <p>${val.category}
-</p></div>`
+</p> 
+<button>
+    Add to cart
+</button></div>`
 })
 
 
