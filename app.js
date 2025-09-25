@@ -261,3 +261,5 @@ removeDuplicateCatagory.forEach(item=>{
   btn.innerText = item
  btnDiv.prepend(btn);
 })
+
+
