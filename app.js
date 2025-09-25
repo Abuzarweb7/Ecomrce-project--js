@@ -257,6 +257,7 @@ products.map((val) =>{
 const removeDuplicateCatagory = ['all item' , ... new Set(products.map((item)=> item.category))]
 removeDuplicateCatagory.forEach(item=>{
   const btn = document.createElement("button")
+  // bnt.classList.add(".filter-btn")
   btn.innerText = item
  btnDiv.prepend(btn);
 })
