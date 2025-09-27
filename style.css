@@ -187,29 +187,3 @@ gap: 40px;
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
-/* add class js 
-  .filter-btn {
-  background: #fff;
-  color: #333;
-  border: 2px solid #40c9ff;
-  padding: 8px 18px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin: 5px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-}
-
-.filter-btn:hover {
-  background: linear-gradient(135deg, #40c9ff, #e81cff);
-  color: #fff;
-  border-color: transparent;
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.filter-btn:active {
-  transform: scale(0.95);
-} */

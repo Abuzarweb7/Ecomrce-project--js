@@ -260,6 +260,48 @@ removeDuplicateCatagory.forEach(item=>{
   // bnt.classList.add(".filter-btn")
   btn.innerText = item
  btnDiv.prepend(btn);
+   btn.addEventListener("click", () => renderCat(item));
+  btnDiv.appendChild(btn);
 })
 
 
+function renderCat(category){
+div.innerHTML = ""; 
+if(category === "all item"){
+  products.forEach(val =>{
+    div .innerHTML += ` <div class="card">
+ <h1 class="name"> 
+    ${val.name}
+  </h1>
+
+  <h2 class="price">$${val.price}</h2>
+ <p class="category">${val.category}</p>
+  <p>${val.category}
+</p> 
+<button>
+    Add to cart
+</button></div>`
+})
+
+}
+else{
+  const filterCat = products.filter(item => item.category === category)
+  filterCat.forEach(val =>{
+    div .innerHTML += ` <div class="card">
+ <h1 class="name"> 
+    ${val.name}
+  </h1>
+
+  <h2 class="price">$${val.price}</h2>
+ <p class="category">${val.category}</p>
+  <p>${val.category}
+</p> 
+<button>
+    Add to cart
+</button></div>`
+  })
+}
+
+
+}
+renderCat("all item");
